@@ -428,11 +428,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [
-            [
-                InlineKeyboardButton('More Bots 🤩', url='https://t.me/TamilBots/84'),
-                InlineKeyboardButton('Update Channel 🥳', url='https://t.me/TamilBots')
-            ]
-            ]
+                    [
+                        InlineKeyboardButton('More Bots 🤩', url='https://t.me/TamilBots/84'),
+                        InlineKeyboardButton('Update Channel 🥳', url='https://t.me/TamilBots')
+                    ]
+                    ]
                 
             
         try:
