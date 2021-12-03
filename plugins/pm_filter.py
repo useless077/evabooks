@@ -427,14 +427,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption=f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
-        buttons = [
-                    [
-                        InlineKeyboardButton('More Bots 🤩', url='https://t.me/TamilBots/84'),
-                        InlineKeyboardButton('Update Channel 🥳', url='https://t.me/TamilBots')
-                    ]
-                    ]
-                
-            
+                 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={file_id}")
@@ -447,7 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption
-                    reply_markup=InlineKeyboardMarkup(buttons)
+                    reply_markup=reply_markup
                     )
                 await query.answer('Check PM, I have sent files in pm',show_alert = True)
         except UserIsBlocked:
@@ -794,5 +787,13 @@ async def advantage_spell_chok(msg):
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
     
+def get_reply_markup(query): 
+    buttons = [ 
+        [ 
+            InlineKeyboardButton('Group', url='https://t.me/TamilMoviesChat'), 
+            InlineKeyboardButton('Channel', url='https://t.me/Newtamilmovies4k') 
+        ] 
+        ] 
+    return InlineKeyboardMarkup(buttons)
 
 
