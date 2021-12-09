@@ -39,13 +39,13 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
+            InlineKeyboardButton('🤔 How to use me 🤔', url='https://t.me/TamilMoviChat/7')
+            ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/TamilBots')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
-            ],[
-            InlineKeyboardButton('How to use me ❔', url='https://t.me/TamilMoviChat/7')
+            InlineKeyboardButton('🎭 About', callback_data='about')       
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -82,13 +82,13 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
+            InlineKeyboardButton('🤔 How to use me 🤔', url='https://t.me/TamilMoviChat/7')
+            ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/TamilBots')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
-            ],[
-            InlineKeyboardButton('How to use me ❔', url='https://t.me/TamilMoviChat/7')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
