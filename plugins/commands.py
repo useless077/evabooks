@@ -44,6 +44,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
+            ],[
+            InlineKeyboardButton('How to use me ❔', url='https://t.me/TamilMoviChat/7')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -85,6 +87,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
+            ],[
+            InlineKeyboardButton('How to use me ❔', url='https://t.me/TamilMoviChat/7')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
