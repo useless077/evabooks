@@ -22,7 +22,7 @@ class script(object):
 │
 ├<b>👨‍💻 Developer : <a href='https://t.me/SaravanaKrish'>✭ Iϻsαi🎭Arⱥ𝖘aภ ✭</a></b>
 │
-├<b>🚸 Powered By : <a href='https://t.me/TamilBots'>TamilBotZ</a></b>
+├<b>🚸 Powered By : <a href='https://t.me/TamilBotZ'>TamilBotZ</a></b>
 │
 ╰──────[Thanks 😊]───⍟"""
     SOURCE_TXT = """<b>NOTE:</b>
