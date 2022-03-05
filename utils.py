@@ -38,7 +38,7 @@ class temp(object):
     MELCOW = {}
     U_NAME = None
     B_NAME = None
-
+    SETTINGS = {}
 async def is_subscribed(bot, query):
     try:
         user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
