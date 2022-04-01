@@ -119,6 +119,8 @@ async def give_filter(client,message):
 
     else:
         await auto_filter(client, message)   
+        return await asyncio.sleep(10) 
+        await k.delete()
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
