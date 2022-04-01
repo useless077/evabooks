@@ -72,6 +72,8 @@ async def gie_filter(client,message):
 
     else:
         await auto_filter(client, message)   
+        return await asyncio.sleep(10) 
+        await k.delete()
 
 @Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client,message):
