@@ -39,7 +39,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🤔 How to use me 🤔', url='https://t.me/TamilMovieChat/7')
+            InlineKeyboardButton('📚 Book House 📚', url='https://t.me/TamilT')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/TamilBots')
@@ -82,7 +82,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🤔 How to use me 🤔', url='https://t.me/TamilMovieChat/7')
+            InlineKeyboardButton('📚 Boom House 📚', url='https://t.me/TamilT')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/TamilBots')
