@@ -726,7 +726,7 @@ async def auto_filter(client, msg, spoll=False):
             url = imdb['url']
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"உங்களது தேடுதலுக்கான {search} கீழே👇\n\n\n இவை 10 நிமிடம் மட்டுமே குழுவில் இருக்கும், பிறகு நீக்கப்பட்டுவிடும்."
     if imdb and imdb.get('poster'):
         try:
             a = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
