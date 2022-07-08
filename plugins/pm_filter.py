@@ -28,7 +28,7 @@ SPELL_CHECK = {}
 #Kanged From @TroJanZheX
 BOT = {}
 
-@Client.on_message(filters.private& filters.text & ~filters.edited & filters.incoming)
+# @Client.on_message(filters.private& filters.text & ~filters.edited & filters.incoming)
 async def gie_filter(client,message):
     grp_id = message.chat.id
     namee = message.text
@@ -200,7 +200,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("okDa", show_alert=True)
+        return await query.answer("ok Da 😏", show_alert=True)
     if movie_  == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
@@ -445,7 +445,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption
                     )
-                await query.answer('Check PM, I have sent files in pm',show_alert = True)
+                await query.answer('தனி உரையாடலில் அனுப்பப்பட்டது 🥳. பதிவிறக்கம் செய்து கொள்ளலாம் 📥',show_alert = True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
         except PeerIdInvalid:
@@ -726,7 +726,7 @@ async def auto_filter(client, msg, spoll=False):
             url = imdb['url']
         )
     else:
-        cap = f"உங்களது தேடுதலுக்கான {search} கீழே👇\n\n\n இவை 10 நிமிடம்⏰ மட்டுமே குழுவில் இருக்கும், பிறகு நீக்கப்பட்டுவிடும். உடனே டவுன்லோட் செய்துகொள்ளவும்."
+        cap = f"உங்களது தேடுதலுக்கான 📚 {search}  கீழே👇\n\n\n இவை 10 நிமிடம் ⏰ மட்டுமே குழுவில் இருக்கும், பிறகு நீக்கப்பட்டுவிடும்🗑. உடனே டவுன்லோட் 📥 செய்துகொள்ளவும்📣."
     if imdb and imdb.get('poster'):
         try:
             a = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
