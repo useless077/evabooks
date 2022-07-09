@@ -28,7 +28,7 @@ SPELL_CHECK = {}
 #Kanged From @TroJanZheX
 BOT = {}
 
-# @Client.on_message(filters.private& filters.text & ~filters.edited & filters.incoming)
+@Client.on_message(filters.private& filters.text & ~filters.edited & filters.incoming)
 async def gie_filter(client,message):
     grp_id = message.chat.id
     namee = message.text
