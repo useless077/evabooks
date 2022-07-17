@@ -479,7 +479,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             file_id=file_id,
             caption=f_caption
             )
-        await asyncio.sleep(6000)
+        await asyncio.sleep(6)
         await z.delete()
 
     elif query.data == "pages":
