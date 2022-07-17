@@ -474,11 +474,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         await query.answer()
-        await client.send_cached_media(
+        z = await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption
             )
+        await asyncio.sleep(6000)
+        await z.delete()
 
     elif query.data == "pages":
         await query.answer()
@@ -805,8 +807,8 @@ async def advantage_spell_chok(msg):
 def get_reply_markup(query): 
     buttons = [ 
         [ 
-            InlineKeyboardButton('Group', url='https://t.me/TamilMoviesChat'), 
-            InlineKeyboardButton('Channel', url='https://t.me/Newtamilmovies4k') 
+            InlineKeyboardButton('Group', url='https://t.me/Tamilt'), 
+            InlineKeyboardButton('Channel', url='https://t.me/tamilbots') 
         ] 
         ] 
     return InlineKeyboardMarkup(buttons)
