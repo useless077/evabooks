@@ -447,7 +447,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
                 
                 await query.answer('தனி உரையாடலில் அனுப்பப்பட்டது 🥳. பதிவிறக்கம் செய்து கொள்ளலாம் 📥',show_alert = True)
-                await asyncio.sleep(10)
+                await asyncio.sleep(10000)
                 await y.delete()
 
         except UserIsBlocked:
