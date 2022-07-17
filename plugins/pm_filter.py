@@ -445,10 +445,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption
                     )
+                
+                await query.answer('தனி உரையாடலில் அனுப்பப்பட்டது 🥳. பதிவிறக்கம் செய்து கொள்ளலாம் 📥',show_alert = True)
                 await asyncio.sleep(10)
                 await y.delete()
 
-                await query.answer('தனி உரையாடலில் அனுப்பப்பட்டது 🥳. பதிவிறக்கம் செய்து கொள்ளலாம் 📥',show_alert = True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
         except PeerIdInvalid:
@@ -482,7 +483,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             file_id=file_id,
             caption=f_caption
             )
-        await asyncio.sleep(6)
+        await asyncio.sleep(6000)
         await z.delete()
 
     elif query.data == "pages":
